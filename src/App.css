@@ -40,8 +40,12 @@
 .container{
   height:100vh;
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items:center;
+}
+.card:last-child{
+  margin-top:30px;
 }
 .card{
   box-shadow: 0 0 5px grey;
@@ -79,4 +83,41 @@
   overflow:hidden;
   margin-right:30px;
   border:2px solid grey;
+}
+
+.card ul li img{
+  width:32px;
+  margin-right:10px;
+}
+.card ul{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card ul li{
+  display:flex;
+  align-items: center;
+  margin-bottom:10px;
+}
+.card ul li a{
+  color:#454545;
+  text-decoration: none;
+}
+.card ul li a:hover{
+  text-decoration: underline;
+}
+.card ul li:last-child{
+  margin-bottom:0;
+}
+.card .followers{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+.card .followers h4{
+  font-size:1.5rem;
+  text-decoration: underline;
+  margin-bottom:20px;
+  color:#454545;
 }
