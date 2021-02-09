@@ -82,7 +82,7 @@
   border-radius:50%;
   overflow:hidden;
   margin-right:30px;
-  border:2px solid grey;
+  border:2px solid #d0d0d0;
 }
 
 .card ul li img{
