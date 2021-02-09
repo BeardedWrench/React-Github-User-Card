@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container{
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+.card:last-child{
+  margin-top:30px;
+}
+.card{
+  box-shadow: 0 0 5px grey;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.card .info{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .info h2{
+  font-size:2rem;
+  margin-bottom:20px;
+  color:grey;
+}
+.card .info h2 a{
+  color:grey;
+  text-decoration: none;
+}
+.card .info h2 a:hover{
+  text-decoration: underline;
+}
+.card .info h3{
+  font-size:1.5rem;
+  color:grey;
+}
+.card .avatar img{
+  width:256px;
+  border-radius:50%;
+  overflow:hidden;
+  margin-right:30px;
+  border:2px solid #d0d0d0;
+}
+
+.card ul li img{
+  width:32px;
+  margin-right:10px;
+}
+.card ul{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card ul li{
+  display:flex;
+  align-items: center;
+  margin-bottom:10px;
+}
+.card ul li a{
+  color:#454545;
+  text-decoration: none;
+}
+.card ul li a:hover{
+  text-decoration: underline;
+}
+.card ul li:last-child{
+  margin-bottom:0;
+}
+.card .followers{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+.card .followers h4{
+  font-size:1.5rem;
+  text-decoration: underline;
+  margin-bottom:20px;
+  color:#454545;
+}
